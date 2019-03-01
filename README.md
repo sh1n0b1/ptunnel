@@ -27,13 +27,22 @@ The Windows port was created by Mike Miller:
 
 Compiling
 ---------
-To compile ptunnel, simply run make. If everything goes well, you should end up
+TLDR; To compile ptunnel, simply run make. If everything goes well, you should end up
 with a binary called ptunnel. This serves as both the client and proxy. You can
 optionally install it using "make install". On Windows, run "make ptunnel.exe"
 to compile the Windows binary. You will need mingw installed, as well as the
 WinPcap library. WinPcap is available here:
   <http://www.winpcap.org/install/bin/WpdPack_4_0_2.zip>
 
+1. Install MinGW and install the neccessary components:
+* MinGW Base Tools
+* g++ compiler*
+* MinGW Make
+* Binutils
+2. Download and extract [WpdPack 4.0.2](http://www.winpcap.org/install/bin/WpdPack_4_0_2.zip) to C:\Program Files\WpdPack
+3. Add C:\MinGWBin to your enviroment PATH 
+4. Run `gcc ptunnel.c md5.c -L"c:\Program Files\WpdPack\Lib" -I"c:\Program Files\WpdPack\Include" -lwpcap -lwsock32 -g -Wall -DWIN32 -o ptunnel.exe` and you should have the ptunnel.exe binary
+5. If ptunnel.exe prompts for the missing Packet.dll and wpcap.dll, you should find it in C:\System32\ 
 
 Running
 -------
