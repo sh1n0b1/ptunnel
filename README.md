@@ -36,7 +36,7 @@ WinPcap library. WinPcap is available here:
 
 1. Install MinGW and install the neccessary components:
 * MinGW Base Tools
-* g++ compiler*
+* g++ compiler
 * MinGW Make
 * Binutils
 2. Download and extract [WpdPack 4.0.2](http://www.winpcap.org/install/bin/WpdPack_4_0_2.zip) to C:\Program Files\WpdPack
