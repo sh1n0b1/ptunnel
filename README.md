@@ -17,7 +17,7 @@ ping requests and replies.
 
 Contact details
 ---------------
-You can the author, Daniel Stoedle, here:
+You can contact the author, Daniel Stoedle, here:
    <daniels@cs.uit.no>
 The official ptunnel website is located here:
    <http://www.cs.uit.no/~daniels/PingTunnel/>
