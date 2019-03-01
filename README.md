@@ -39,10 +39,10 @@ WinPcap library. WinPcap is available here:
 * g++ compiler
 * MinGW Make
 * Binutils
-2. Download and extract [WpdPack 4.0.2](http://www.winpcap.org/install/bin/WpdPack_4_0_2.zip) to C:\Program Files\WpdPack
-3. Add C:\MinGWBin to your enviroment PATH 
+2. Download and extract [WpdPack 4.0.2](http://www.winpcap.org/install/bin/WpdPack_4_0_2.zip) to `C:\Program Files\WpdPack`
+3. Add `C:\MinGWBin` to your enviroment PATH 
 4. Run `gcc ptunnel.c md5.c -L"c:\Program Files\WpdPack\Lib" -I"c:\Program Files\WpdPack\Include" -lwpcap -lwsock32 -g -Wall -DWIN32 -o ptunnel.exe` and you should have the ptunnel.exe binary
-5. If ptunnel.exe prompts for the missing Packet.dll and wpcap.dll, you should find it in C:\System32\ 
+5. If ptunnel.exe prompts for the missing Packet.dll and wpcap.dll, you should find it in `C:\System32\`
 
 Running
 -------
